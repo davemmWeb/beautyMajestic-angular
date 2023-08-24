@@ -11,11 +11,14 @@ import { Movie } from '../app/models/movie.model'
 export class AppComponent {
   title = 'beautyMajestic';
   http = inject(HttpClient);
-  products: Movie[] = []
+  products: Movie[] = [];
+  theme = localStorage.getItem('theme') || 'light';
 
   changeTitle() {
     this.title = 'changed'
   }
+
+
 
   ngOnInit() {
     this.http.get<Movie[]>("https://www.omdbapi.com/?i=tt3896198&apikey=57c4fcda")
