@@ -11,15 +11,40 @@ body {
 /* For the dark theme */
 .dark-theme {
   background-color: rgb(41, 41, 41);
-  /* Add other styles for dark theme */
+  color: #ffffff; /* Cambiar el color del texto para el tema oscuro */
+  /* Agregar otros estilos para el tema oscuro */
 }
 
 /* For the light theme */
 .light-theme {
-  background-color: #ffffff; /* Change this to the desired light theme color */
+  background-color: #ffffff; 
+  color: rgb(41, 41, 41);
+  /* Change this to the desired light theme color */
   /* Add other styles for light theme */
-}
+  .btn-bd-primary {
+    --bd-gold-bg: #ffd700; /* Dorado */
+    --bd-gold-rgb: 255, 215, 0; /* Dorado */
 
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-gold-bg);
+    --bs-btn-border-color: var(--bd-gold-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #cca300; /* Dorado más oscuro al hacer hover */
+    --bs-btn-hover-border-color: #cca300; /* Dorado más oscuro al hacer hover */
+    --bs-btn-focus-shadow-rgb: var(--bd-gold-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #b38600; /* Dorado más oscuro al estar activo */
+    --bs-btn-active-border-color: #b38600; /* Dorado más oscuro al estar activo */
+  }
+}
+.text-dark {
+  color: #ffffff;
+  
+}
+.text-light {
+  color: #141313;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL

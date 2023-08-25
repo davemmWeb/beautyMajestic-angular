@@ -9,16 +9,15 @@ import { Movie } from '../app/models/movie.model'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'beautyMajestic';
+  title = 'Beauty Majestic';
   http = inject(HttpClient);
   products: Movie[] = [];
   theme = localStorage.getItem('theme') || 'light';
 
-  changeTitle() {
-    this.title = 'changed'
+  changeTheme(newTheme: string): void {
+    localStorage.setItem('theme', newTheme);
+    this.theme = newTheme
   }
-
-
 
   ngOnInit() {
     this.http.get<Movie[]>("https://www.omdbapi.com/?i=tt3896198&apikey=57c4fcda")

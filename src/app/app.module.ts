@@ -12,6 +12,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
+import { DarkthemeComponent } from './components/darktheme/darktheme.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ServicesComponent } from './components/services/services.component';
     CarouselComponent,
     GalleryComponent,
     ContactComponent,
-    ServicesComponent
+    ServicesComponent,
+    DarkthemeComponent
   ],
   imports: [
     BrowserModule,
